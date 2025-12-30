@@ -8,6 +8,7 @@ const port = process.env.PORT || 3000;
 app.get("/", (req, res) => {
   res.json({
     greeting: `Hello this is a simple express app running on port ${port}`,
+    version: "1.0.0",
     timestamp: new Date().toISOString(),
   });
 });
